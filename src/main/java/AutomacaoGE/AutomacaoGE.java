@@ -1,4 +1,4 @@
-package OpenSiteAutomation;
+package AutomacaoGE;
 
 import java.time.Duration;
 import java.util.List;
@@ -14,7 +14,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class OpenSiteAutomation {
+public class AutomacaoGE {
 
     private WebDriver driver;
     private WebDriverWait wait;

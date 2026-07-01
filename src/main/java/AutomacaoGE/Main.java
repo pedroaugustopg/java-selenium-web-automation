@@ -1,10 +1,10 @@
-package OpenSiteAutomation;
+package AutomacaoGE;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        OpenSiteAutomation automation = new OpenSiteAutomation();
+        AutomacaoGE automation = new AutomacaoGE();
         automation.executarTeste();
 
     }
