@@ -38,15 +38,15 @@ public class GEAutomation {
         }
         catch (TimeoutException e) {
             System.out.println(
-                    "O tempo de carregamento estabelecido foi excedido");
+                    "The configured loading time has been exceeded.");
         }
         catch (NoSuchElementException e) {
             System.out.println(
-                    "Palavra-chave não encontada");
+                    "Keyword not found.");
         }
         catch (Exception e) {
             System.out.println(
-                    "Erro inesperado: " + e.getMessage());
+                    "Unexpected error: " + e.getMessage());
         }
         finally {
             tearDownBrowser();
@@ -69,7 +69,7 @@ public class GEAutomation {
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.tagName("body")));
 
-        System.out.println("Site carregado com sucesso.\n");
+        System.out.println("Website loaded successfully.\n");
     }
 
     private void validatePageTitle() {
@@ -77,16 +77,16 @@ public class GEAutomation {
 
         System.out.println(driver.getTitle());
 
-        System.out.println("Título validado.");
+        System.out.println("Title successfully validated.");
     }
 
     private void validateCurrentURL() {
         if (Objects.requireNonNull(driver.getCurrentUrl())
                 .contains("copa-do-mundo")) {
 
-            System.out.println("Esta URL é válida.\n");
+            System.out.println("This URL is valid.\n");
         } else {
-            System.out.println("Esta URL é inválida.\n");
+            System.out.println("This URL is invalid.\n");
         }
     }
 
@@ -95,37 +95,37 @@ public class GEAutomation {
 
         js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
 
-        System.out.println("Scroll pela página realizado.\n");
+        System.out.println("Page scrolled successfully.\n");
     }
 
     private void verifyKeywordPresence() {
-        String texto = driver.findElement(By.tagName("body")).getText();
+        String text = driver.findElement(By.tagName("body")).getText();
 
-        if (texto.contains("Brasil")) {
-            System.out.println("Palavra \"" + "Brasil" + "\" encontrada.\n");
+        if (text.contains("Brasil")) {
+            System.out.println("Word \"" + "Brasil" + "\" found.\n");
         } else {
-            System.out.println("Palavra não encontrada.\n");
+            System.out.println("Keyword not found.\n");
         }
     }
 
     private void countLinks() {
         List<WebElement> links = driver.findElements(By.tagName("a"));
 
-        System.out.println("Quantidade de links: " + links.size());
+        System.out.println("Number of links: " + links.size());
     }
 
     private void countImages() {
-        List<WebElement> imagens = driver.findElements(By.tagName("img"));
+        List<WebElement> images = driver.findElements(By.tagName("img"));
 
-        System.out.println("Quantidade de imagens: " + imagens.size());
+        System.out.println("Number of images: " + images.size());
     }
 
     private void listHeadings() {
-        List<WebElement> titulos = driver.findElements(By.tagName("h2"));
+        List<WebElement> titles = driver.findElements(By.tagName("h2"));
 
-        System.out.println("===== TÍTULOS =====");
+        System.out.println("===== TITLES =====");
 
-        for (WebElement titulo : titulos) {
+        for (WebElement titulo : titles) {
             if (!titulo.getText().isBlank()) {
                 System.out.println(titulo.getText());
                 System.out.println("--------------------------------------------------------");
@@ -135,9 +135,9 @@ public class GEAutomation {
     }
 
     private void verifyButtonPresence() {
-        List<WebElement> botoes = driver.findElements(By.tagName("button"));
+        List<WebElement> buttons = driver.findElements(By.tagName("button"));
 
-        System.out.println("Botões encontrados: " + botoes.size());
+        System.out.println("Buttons found: " + buttons.size());
 
         System.out.println();
     }
@@ -145,7 +145,7 @@ public class GEAutomation {
     private void tearDownBrowser() {
         if (driver != null) {
             driver.quit();
-            System.out.println("O navegador foi encerrado.\n");
+            System.out.println("The browser has been closed.\n");
         }
     }
 }
