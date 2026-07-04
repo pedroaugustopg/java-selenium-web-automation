@@ -1,4 +1,4 @@
-package AutomacaoGE;
+package automacaoweb;
 
 import java.time.Duration;
 import java.util.List;

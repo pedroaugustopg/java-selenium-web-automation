@@ -1,4 +1,4 @@
-package AutomacaoGE;
+package automacaoweb;
 
 public class Main {
 
