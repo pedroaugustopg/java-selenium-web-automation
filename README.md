@@ -1,6 +1,6 @@
 # Automação Web com Java e Selenium
 
-## 📌 Descrição
+## Descrição
 
 Este projeto demonstra uma automação web utilizando **Java** e **Selenium WebDriver**.
 
@@ -10,7 +10,7 @@ O objetivo do projeto é demonstrar conceitos de automação de testes web, serv
 
 ---
 
-## 🚀 Funcionalidades
+## Funcionalidades
 
 A automação executa as seguintes ações:
 
@@ -30,7 +30,7 @@ A automação executa as seguintes ações:
 
 ---
 
-## 🛠 Tecnologias utilizadas
+## Tecnologias utilizadas
 
 * Java
 * Selenium WebDriver
@@ -40,7 +40,7 @@ A automação executa as seguintes ações:
 
 ---
 
-## 📂 Estrutura do projeto
+## Estrutura do projeto
 
 ```text
 src
@@ -55,7 +55,7 @@ Cada classe possui uma única responsabilidade, facilitando a organização, man
 
 ---
 
-## ▶️ Como executar
+## Como executar
 
 ### 1. Clone o repositório
 
@@ -89,7 +89,7 @@ Main.java
 
 ---
 
-## 📋 Validações realizadas
+## Validações realizadas
 
 | Validação        | Descrição                                            |
 | ---------------- | ---------------------------------------------------- |
@@ -105,7 +105,7 @@ Main.java
 
 ---
 
-## 💡 Boas práticas aplicadas
+## Boas práticas aplicadas
 
 * Separação de responsabilidades em classes distintas;
 * Utilização de métodos específicos para cada ação;
@@ -113,10 +113,3 @@ Main.java
 * Encerramento correto do navegador com `driver.quit()`;
 * Código organizado e modular;
 * Estrutura preparada para futuras evoluções.
-
----
-
-## 👨‍💻 Objetivo
-
-Este projeto foi desenvolvido com fins de estudo para aprimorar conhecimentos em automação de testes web utilizando Java e Selenium, aplicando conceitos de organização 
-de código e boas práticas amplamente utilizadas em projetos de QA.
